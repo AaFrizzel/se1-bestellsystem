@@ -84,7 +84,7 @@ public class Application_C3 {
 		 * Insert other customers, aticles and orders.
 		 */
 
-		outputProcessor.printOrders(orders, false); // Ausgabe aller Bestellungen
+		outputProcessor.printOrders(orders, true); // Ausgabe aller Bestellungen
 	}
 
 }
