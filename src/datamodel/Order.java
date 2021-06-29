@@ -3,6 +3,8 @@ package datamodel;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Order {
 	private final long id;
@@ -22,6 +24,9 @@ public class Order {
 	}
 
 	public Date getDate() {
+		if(date ==  null) {
+			return new Date();
+		}
 		return date;
 	}
 
@@ -43,7 +48,14 @@ public class Order {
 	}
 
 	public Order addItem(OrderItem item) {
-		items.add(item);
+		Set uniqueItems = items.stream().collect(Collectors.toSet());
+		uniqueItems.add(item);
+		
+		if(this.count() == uniqueItems.size() || item == null) {
+			
+		}else {
+			items.add(item);
+		}
 		return this;
 	}
 

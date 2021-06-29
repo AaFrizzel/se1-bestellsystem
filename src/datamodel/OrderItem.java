@@ -13,6 +13,8 @@ public class OrderItem {
 	}
 
 	public String getDescription() {
+		if(description == null)
+			this.description = "";
 		return description;
 	}
 
@@ -25,6 +27,8 @@ public class OrderItem {
 	}
 
 	public int getUnitsOrdered() {
+		if(unitsOrdered < 0)
+			this.unitsOrdered = 0;
 		return unitsOrdered;
 	}
 

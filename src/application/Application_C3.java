@@ -14,7 +14,7 @@ public class Application_C3 {
 	
 	public static void main(String[] args){
 		
-		System.out.println("SE1‐Bestellsystem");
+		System.out.println("SE1-Bestellsystem");
 		
 		ComponentFactory componentFactory = ComponentFactory.getInstance();
 		
@@ -33,7 +33,7 @@ public class Application_C3 {
 		Customer cAnne = dataFactory.createCustomer("Meyer, Anne", "+4917223524");
 		Customer cNadine = dataFactory.createCustomer("Nadine Ulla Blumenfeld", "+4915292454");
 		Customer cTimo = dataFactory.createCustomer( "Timo Werner", "tw@gmail.com");
-		Customer cSandra = dataFactory.createCustomer("Sandra Müller", "samue62@gmx.de");
+		Customer cSandra = dataFactory.createCustomer("Sandra Mueller", "samue62@gmx.de");
 		
 		
 		

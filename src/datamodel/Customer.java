@@ -18,6 +18,8 @@ public class Customer {
 	}
 
 	public String getFirstName() {
+		if(firstName == null)
+			this.firstName = "";
 		return firstName;
 	}
 
@@ -26,6 +28,8 @@ public class Customer {
 	}
 
 	public String getLastName() {
+		if(lastName == null)
+			this.lastName = "";
 		return lastName;
 	}
 
@@ -34,6 +38,8 @@ public class Customer {
 	}
 
 	public String getContact() {
+		if(contact == null)
+			this.contact = "";
 		return contact;
 	}
 

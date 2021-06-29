@@ -18,6 +18,8 @@ public class Article {
 	}
 
 	public String getDescription() {
+		if(description == null)
+			this.description = "";
 		return description;
 	}
 
@@ -26,15 +28,25 @@ public class Article {
 	}
 
 	public long getUnitPrice() {
+		if(unitPrice < 0)
+			this.unitPrice = 0;
 		return unitPrice;
 	}
 
 	public int getUnitsInStore() {
+		if(unitsInStore < 0)
+			this.unitsInStore = 0;
 		return unitsInStore;
 	}
 
 	public void setUnitsInStore(int number) {
 		this.unitsInStore = number;
+	}
+
+	public void setUnitPrice(long price) {
+		// TODO Auto-generated method stub
+		this.unitPrice = price;
+		
 	}
 
 }
